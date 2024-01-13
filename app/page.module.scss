@@ -1,0 +1,30 @@
+.header {
+  height: 10%;
+}
+
+.main {
+  // height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.description {
+  max-width: 400px;
+  text-align: right;
+}
+
+.verticalBar {
+  width: 8px;
+  height: 640px;
+  background-color: var(--secondary-color);
+}
+
+.projects {
+  margin-right: 180px;
+}
+
+.footer {
+  height: 10%;
+}

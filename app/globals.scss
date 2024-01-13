@@ -1,0 +1,33 @@
+@import "normalize.css";
+
+:root {
+  --max-width: 1200px;
+
+  --primary-font: serif;
+  --secondary-font: sans-serif;
+
+  --primary-color: #fff;
+  --secondary-color: #303030;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
