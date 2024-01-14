@@ -1,13 +1,8 @@
-.header {
-  height: 10%;
-}
-
 .main {
-  // height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 32px;
 }
 
 .description {
@@ -23,8 +18,4 @@
 
 .projects {
   margin-right: 180px;
-}
-
-.footer {
-  height: 10%;
 }

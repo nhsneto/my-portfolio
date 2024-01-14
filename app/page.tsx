@@ -1,9 +1,16 @@
+import { DarkMode, Email, GitHub, LinkedIn } from "@mui/icons-material";
 import styles from "./page.module.scss";
 
 export default function Home() {
   return (
-    <>
-      <header className={styles.header}>header</header>
+    <div className={styles.container}>
+      <header className={styles.header}>
+        <Email />
+        <GitHub />
+        <LinkedIn />
+        <DarkMode />
+      </header>
+
       <main className={styles.main}>
         <div className={styles.description}>
           <section>
@@ -16,6 +23,7 @@ export default function Home() {
               desenvolvimento WEB e Mobile.
             </p>
           </section>
+
           <section>
             <h2>Habilidades</h2>
             <ul>
@@ -30,7 +38,9 @@ export default function Home() {
             </ul>
           </section>
         </div>
+
         <div className={styles.verticalBar}></div>
+
         <section className={styles.projects}>
           <h2>Projetos</h2>
           <ul>
@@ -45,9 +55,10 @@ export default function Home() {
           </ul>
         </section>
       </main>
+
       <footer className={styles.footer}>
-        <span>©2024 nhsneto@github.io</span>
+        <span>© 2024 nhsneto@github.io</span>
       </footer>
-    </>
+    </div>
   );
 }
