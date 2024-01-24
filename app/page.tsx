@@ -1,5 +1,6 @@
 import { DarkMode, Email, GitHub, LinkedIn } from "@mui/icons-material";
 import styles from "./page.module.scss";
+import LanguageDropDownMenu from "./components/LanguageDropDownMenu";
 
 export default function Home() {
   return (
@@ -67,7 +68,8 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <span>© 2024 nhsneto@github.io</span>
+        <span>© 2024 nhsneto.github.io</span>
+        <LanguageDropDownMenu />
       </footer>
     </div>
   );
