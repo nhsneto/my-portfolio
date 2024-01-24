@@ -5,10 +5,20 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <Email />
-        <GitHub />
-        <LinkedIn />
-        <DarkMode />
+        <ul className={styles.socialIcons}>
+          <li>
+            <Email />
+          </li>
+          <li>
+            <GitHub />
+          </li>
+          <li>
+            <LinkedIn />
+          </li>
+          <li>
+            <DarkMode />
+          </li>
+        </ul>
       </header>
 
       <main className={styles.main}>
