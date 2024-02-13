@@ -1,8 +1,28 @@
+.container {
+  max-width: 800px;
+  margin: auto 0;
+}
+
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+
+  & svg {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 .description {
@@ -17,10 +37,10 @@
 }
 
 .projects {
-  margin-right: 180px;
+  width: 400px;
 }
 
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
