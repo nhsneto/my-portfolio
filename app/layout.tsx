@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Libre_Baskerville } from "next/font/google";
 import "./globals.scss";
 
 const inter = Inter({ subsets: ["latin"] });
+const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Nelson Neto",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={libreBaskerville.className}>{children}</body>
     </html>
   );
 }

@@ -1,6 +1,9 @@
 import { DarkMode, Email, GitHub, LinkedIn } from "@mui/icons-material";
+import { League_Spartan } from "next/font/google";
 import styles from "./page.module.scss";
 import LanguageDropDownMenu from "./components/LanguageDropDownMenu";
+
+const leagueSpartan = League_Spartan({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -24,25 +27,30 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.description}>
-          <section>
-            <h2>Nelson Neto</h2>
-            <p>Desenvolvedor</p>
+          <section className={styles.about}>
+            <div className={styles.title}>
+              <h2 className={leagueSpartan.className}>Nelson Neto</h2>
+              <p className={leagueSpartan.className}>Desenvolvedor</p>
+            </div>
             <p>
               Olá, meu nome é Nelson, sou apaixonado por desenvolvimento de
-              software. Atualmente, curso Análise e Desenvolvimento de Sistemas
-              no Insituto Federal de Pernambuco (IFPE). Tenho interesse em
-              desenvolvimento WEB e Mobile.
+              software. Atualmente, estou cursando o último ano de Análise e
+              Desenvolvimento de Sistemas no Insituto Federal de Pernambuco
+              (IFPE). Tenho interesse em desenvolvimento <strong>WEB</strong> e{" "}
+              <strong>Mobile</strong>.
             </p>
           </section>
 
-          <section>
-            <h2>Habilidades</h2>
+          <section className={styles.skills}>
+            <h2 className={leagueSpartan.className}>Habilidades</h2>
             <ul>
               <li>MySQL</li>
               <li>MongoDB</li>
               <li>Java</li>
               <li>Spring Boot</li>
               <li>JUnit</li>
+              <li>HTML</li>
+              <li>CSS/SASS</li>
               <li>JavaScript</li>
               <li>TypeScript</li>
               <li>React</li>
@@ -53,7 +61,7 @@ export default function Home() {
         <div className={styles.verticalBar}></div>
 
         <section className={styles.projects}>
-          <h2>Projetos</h2>
+          <h2 className={leagueSpartan.className}>Projetos</h2>
           <ul>
             <li>Projeto 1</li>
             <li>Projeto 2</li>

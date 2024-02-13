@@ -30,6 +30,28 @@
   text-align: right;
 }
 
+.about {
+  margin-bottom: 32px;
+  line-height: 1.8;
+}
+
+.title {
+  margin-bottom: 16px;
+  line-height: 1.2;
+  font-size: 24px;
+}
+
+.skills {
+  & h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  & li {
+    margin-bottom: 8px;
+  }
+}
+
 .verticalBar {
   width: 8px;
   height: 640px;
@@ -38,6 +60,15 @@
 
 .projects {
   width: 400px;
+
+  & h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  & li {
+    margin-bottom: 12px;
+  }
 }
 
 .footer {
