@@ -11,13 +11,23 @@ export default function Home() {
       <header className={styles.header}>
         <ul className={styles.socialIcons}>
           <li>
-            <Email />
+            <a href="mailto:nhsneto@gmail.com" title="Email">
+              <Email />
+            </a>
           </li>
           <li>
-            <GitHub />
+            <a href="https://github.com/nhsneto" target="_blank" title="GitHub">
+              <GitHub />
+            </a>
           </li>
           <li>
-            <LinkedIn />
+            <a
+              href="https://linkedin.com/in/nhsneto"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <LinkedIn />
+            </a>
           </li>
           <li>
             <DarkMode />
@@ -76,7 +86,9 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <span className={leagueSpartan.className}>© 2024 nhsneto.github.io</span>
+        <span className={leagueSpartan.className}>
+          © 2024 nhsneto.github.io
+        </span>
         <LanguageDropDownMenu />
       </footer>
     </div>

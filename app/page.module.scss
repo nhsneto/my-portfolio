@@ -23,6 +23,15 @@
     height: 24px;
     width: 24px;
   }
+
+  & a:visited,
+  a:link {
+    color: var(--secondary-color);
+  }
+
+  & a:hover {
+    color: rgba(48, 48, 48, 0.7);
+  }
 }
 
 .description {
