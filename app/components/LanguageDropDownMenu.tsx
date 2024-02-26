@@ -1,5 +1,6 @@
 "use client";
 
+import { League_Spartan } from "next/font/google";
 import { Dropdown } from "@mui/base/Dropdown";
 import { MenuButton } from "@mui/base/MenuButton";
 import { Menu } from "@mui/base/Menu";
@@ -8,16 +9,18 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { styled } from "@mui/system";
 import styles from "./LanguageDropDownMenu.module.scss";
 
+const leagueSpartan = League_Spartan({ subsets: ["latin"] });
+
 function LanguageDropDownMenu() {
   return (
     <Dropdown>
       <MenuButton className={styles.menuButton}>
-        <span>Language</span>
+        <span className={leagueSpartan.className}>Language</span>
         <ArrowDropDownIcon />
       </MenuButton>
       <Menu slots={{ listbox: Listbox }}>
-        <MenuItem>English</MenuItem>
-        <MenuItem>Português - Brasil</MenuItem>
+        <MenuItem className={leagueSpartan.className}>English</MenuItem>
+        <MenuItem className={leagueSpartan.className}>Português - Brasil</MenuItem>
       </Menu>
     </Dropdown>
   );
