@@ -11,4 +11,8 @@
   &:hover {
     background-color: rgba(48, 48, 48, 0.05);
   }
+
+  & span {
+    color: var(--black-reading);
+  }
 }

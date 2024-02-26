@@ -37,6 +37,7 @@
 .description {
   max-width: 400px;
   text-align: right;
+  color: var(--black-reading);
 }
 
 .about {
@@ -51,6 +52,8 @@
 }
 
 .skills {
+  color: var(--black-reading);
+
   & h2 {
     margin-bottom: 16px;
     font-size: 24px;
@@ -69,6 +72,7 @@
 
 .projects {
   width: 400px;
+  color: var(--black-reading);
 
   & h2 {
     margin-bottom: 16px;
@@ -83,4 +87,5 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  color: var(--black-reading);
 }

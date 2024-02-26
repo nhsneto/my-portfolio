@@ -20,7 +20,9 @@ function LanguageDropDownMenu() {
       </MenuButton>
       <Menu slots={{ listbox: Listbox }}>
         <MenuItem className={leagueSpartan.className}>English</MenuItem>
-        <MenuItem className={leagueSpartan.className}>Português - Brasil</MenuItem>
+        <MenuItem className={leagueSpartan.className}>
+          Português - Brasil
+        </MenuItem>
       </Menu>
     </Dropdown>
   );
@@ -30,7 +32,6 @@ const Listbox = styled("ul")(
   () => `
   padding: 8px 0;
   background-color: white;
-  color: #303030;
   box-shadow: 0px 0px 6px rgba(0,0,0, 0.32);
   z-index: 1;
   `
@@ -39,7 +40,7 @@ const Listbox = styled("ul")(
 const MenuItem = styled(BaseMenuItem)(
   () => `
   padding: 6px;
-  color: #303030;
+  color: var(--black-reading);
   cursor: pointer;
 
   &:hover {
