@@ -1,7 +1,8 @@
-import { DarkMode, Email, GitHub, LinkedIn } from "@mui/icons-material";
+import { Email, GitHub, LinkedIn } from "@mui/icons-material";
 import { League_Spartan } from "next/font/google";
 import styles from "./page.module.scss";
 import LanguageDropDownMenu from "./components/LanguageDropDownMenu";
+import ModeToggle from "./components/ModeToggle";
 
 const leagueSpartan = League_Spartan({ subsets: ["latin"] });
 
@@ -30,7 +31,7 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <DarkMode />
+            <ModeToggle />
           </li>
         </ul>
       </header>
