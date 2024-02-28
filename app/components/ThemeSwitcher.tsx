@@ -1,10 +1,10 @@
 "use client";
 
 import { DarkMode, LightMode } from "@mui/icons-material";
-import styles from "./ModeToggle.module.scss";
 import { useEffect, useState } from "react";
+import styles from "./ThemeSwitcher.module.scss";
 
-export default function ModeToggle() {
+export default function ThemeSwitcher() {
   let isLightMode = false;
 
   useEffect(() => {
@@ -15,13 +15,21 @@ export default function ModeToggle() {
 
   if (lightMode) {
     return (
-      <div className={styles.icon} onClick={() => setLightMode(false)}>
+      <div
+        className={styles.icon}
+        onClick={() => setLightMode(false)}
+        title="Dark Mode"
+      >
         <DarkMode />
       </div>
     );
   } else {
     return (
-      <div className={styles.icon} onClick={() => setLightMode(true)}>
+      <div
+        className={styles.icon}
+        onClick={() => setLightMode(true)}
+        title="Light Mode"
+      >
         <LightMode />
       </div>
     );

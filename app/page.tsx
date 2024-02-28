@@ -1,8 +1,8 @@
 import { Email, GitHub, LinkedIn } from "@mui/icons-material";
 import { League_Spartan } from "next/font/google";
-import styles from "./page.module.scss";
 import LanguageDropDownMenu from "./components/LanguageDropDownMenu";
-import ModeToggle from "./components/ModeToggle";
+import ThemeSwitcher from "./components/ThemeSwitcher";
+import styles from "./page.module.scss";
 
 const leagueSpartan = League_Spartan({ subsets: ["latin"] });
 
@@ -31,7 +31,7 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <ModeToggle />
+            <ThemeSwitcher />
           </li>
         </ul>
       </header>
