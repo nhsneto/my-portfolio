@@ -1,9 +1,41 @@
 @import "normalize.css";
 
 :root {
-  --gray: #303030;
-  --light-gray: #303030cc;
-  --black-reading: #000000de;
+  --primary-color: #303030;
+  --hover-color: #303030cc;
+  --text-color: #000000de;
+  --background-color: #fff;
+  --hover-background-color: #0000000d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #ffffff99;
+    --hover-color: #ffffffcc;
+    --text-color: #ffffffde;
+    --background-color: #121212;
+    --hover-background-color: #ffffff1f;
+    --menu-background-color: #ffffff1a;
+  }
+}
+
+:root[data-theme="lightMode"] {
+  color-scheme: light;
+  --primary-color: #303030;
+  --hover-color: #303030cc;
+  --text-color: #000000de;
+  --background-color: #fff;
+  --hover-background-color: #0000000d;
+}
+
+:root[data-theme="darkMode"] {
+  color-scheme: dark;
+  --primary-color: #ffffff99;
+  --hover-color: #ffffffcc;
+  --text-color: #ffffffde;
+  --background-color: #121212;
+  --hover-background-color: #ffffff1f;
+  --menu-background-color: #ffffff1a;
 }
 
 * {
@@ -15,6 +47,7 @@
 html {
   width: 100vw;
   height: 100vh;
+  color-scheme: light dark;
 }
 
 body {
@@ -24,6 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  background-color: var(--background-color);
 }
 
 li {

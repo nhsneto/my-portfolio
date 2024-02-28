@@ -46,7 +46,7 @@ export default function Home() {
             <p>
               Olá, meu nome é Nelson, sou apaixonado por desenvolvimento de
               software. Atualmente, estou cursando o último ano de Análise e
-              Desenvolvimento de Sistemas no Insituto Federal de Pernambuco
+              Desenvolvimento de Sistemas no Instituto Federal de Pernambuco
               (IFPE). Tenho interesse em desenvolvimento <strong>WEB</strong> e{" "}
               <strong>Mobile</strong>.
             </p>

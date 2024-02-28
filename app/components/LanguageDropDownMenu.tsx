@@ -16,7 +16,7 @@ function LanguageDropDownMenu() {
     <Dropdown>
       <MenuButton className={styles.menuButton}>
         <span className={leagueSpartan.className}>Language</span>
-        <ArrowDropDownIcon />
+        <ArrowDropDownIcon className={styles.dropDownIcon} />
       </MenuButton>
       <Menu slots={{ listbox: Listbox }}>
         <MenuItem className={leagueSpartan.className}>English</MenuItem>
@@ -31,7 +31,7 @@ function LanguageDropDownMenu() {
 const Listbox = styled("ul")(
   () => `
   padding: 8px 0;
-  background-color: white;
+  background-color: var(--menu-background-color);
   box-shadow: 0px 0px 6px rgba(0,0,0, 0.32);
   z-index: 1;
   `
@@ -40,11 +40,11 @@ const Listbox = styled("ul")(
 const MenuItem = styled(BaseMenuItem)(
   () => `
   padding: 6px;
-  color: var(--black-reading);
+  color: var(--text-color);
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(0,0,0, 0.05);
+    background-color: var(--hover-background-color);
   }
   `
 );

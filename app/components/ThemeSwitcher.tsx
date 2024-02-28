@@ -17,7 +17,10 @@ export default function ThemeSwitcher() {
     return (
       <div
         className={styles.icon}
-        onClick={() => setLightMode(false)}
+        onClick={() => {
+          document.documentElement.setAttribute("data-theme", "darkMode");
+          setLightMode(false);
+        }}
         title="Dark Mode"
       >
         <DarkMode />
@@ -27,7 +30,10 @@ export default function ThemeSwitcher() {
     return (
       <div
         className={styles.icon}
-        onClick={() => setLightMode(true)}
+        onClick={() => {
+          document.documentElement.setAttribute("data-theme", "lightMode");
+          setLightMode(true);
+        }}
         title="Light Mode"
       >
         <LightMode />

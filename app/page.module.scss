@@ -26,18 +26,18 @@
 
   & a:visited,
   a:link {
-    color: var(--gray);
+    color: var(--primary-color);
   }
 
   & a:hover {
-    color: var(--light-gray);
+    color: var(--hover-color);
   }
 }
 
 .description {
   max-width: 400px;
   text-align: right;
-  color: var(--black-reading);
+  color: var(--text-color);
 }
 
 .about {
@@ -52,7 +52,7 @@
 }
 
 .skills {
-  color: var(--black-reading);
+  color: var(--text-color);
 
   & h2 {
     margin-bottom: 16px;
@@ -67,12 +67,12 @@
 .verticalBar {
   width: 8px;
   height: 640px;
-  background-color: var(--gray);
+  background-color: var(--primary-color);
 }
 
 .projects {
   width: 400px;
-  color: var(--black-reading);
+  color: var(--text-color);
 
   & h2 {
     margin-bottom: 16px;
@@ -87,5 +87,5 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  color: var(--black-reading);
+  color: var(--text-color);
 }
